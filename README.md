@@ -1,5 +1,5 @@
-# Data_science
-Here I gather the main data science projects developed as studies, when the project presents completeness in what it proposes, I turn it into a repository.
+# Datascience
+Here is a list of the main projects developed in the field of data science, encompassing everything from data analysis to machine learning.
 ---
-Aqui reuno os principais projetos de ciência de dados  desenvolvidos enquanto estudos, quando o projeto apresentar completude no que se propõe, eu torno ele em um repositório.
+Aqui está disposto os principais projetos desenvolvidos na área de ciência de dados, envolvendo desde análise de dados até aprendizado de máquina.
 ---
