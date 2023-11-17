@@ -21,14 +21,14 @@ class Network(object):
 
     def __init__(self, sizes):
         """A lista `sizes` contém o número de neurônios nas
-         respectivas camadas da rede. Por exemplo, se a lista
-         for [2, 3, 1] então será uma rede de três camadas, com o
-         primeira camada contendo 2 neurônios, a segunda camada 3 neurônios,
-         e a terceira camada 1 neurônio. Os bias e pesos para a
-         rede são inicializados aleatoriamente, usando uma distribuição Gaussiana com média 0 e variância 1. 
-         Note que a primeira camada é assumida como uma camada de entrada, e por convenção nós
-         não definimos nenhum bias para esses neurônios, pois os bias são usados
-         na computação das saídas das camadas posteriores."""
+        respectivas camadas da rede. Por exemplo, se a lista
+         for [2, 3, 1] então será uma rede de três camadas, com o
+        primeira camada conendo 2 neurônios, a segunda camada 3 neurônios,
+        e a terceira camada 1 neurônio. Os bias e pesos para a
+        rede são inicializados aleatoriamente, usando uma distribuição Gaussiana com média 0 e variância 1.
+        Note que a primeira camada é assumida como uma camada de entrada, e por convenção nós
+         não definimos nenhum bias para esses neurônios, pois os bias são usados
+         na computação das saídas das camadas posteriores."""
 
         self.num_layers = len(sizes)
         self.sizes = sizes
@@ -44,12 +44,12 @@ class Network(object):
     def SGD(self, training_data, epochs, mini_batch_size, eta, test_data=None):
         """Treinar a rede neural usando mini-batch stochastic
         gradient descent. O `training_data` é uma lista de tuplas
-         `(x, y)` representando as entradas de treinamento e as
-         saídas. Os outros parâmetros não opcionais são
-         auto-explicativos. Se `test_data` for fornecido, então a
-         rede será avaliada em relação aos dados do teste após cada
-         época e progresso parcial impresso. Isso é útil para
-         acompanhar o progresso, mas retarda as coisas substancialmente."""
+         `(x, y)` representando as entradas de treinamento e as
+         saídas. Os outros parâmetros não opcionais são
+         auto-explicativos. Se `test_data` for fornecido, então a
+         rede será avaliada em relação aos dados do teste após cada
+         época e progresso parcial impresso. Isso é útil para
+         acompanhar o progresso, mas retarda as coisas substancialmente."""
 
         training_data = list(training_data)
         n = len(training_data)
@@ -66,14 +66,14 @@ class Network(object):
                 self.update_mini_batch(mini_batch, eta)
             
             if test_data:
-                print("Epoch {} : {} / {}".format(j,self.evaluate(test_data),n_test));
+                print("Epoch {} : {} / {}".format(j,self.evaluate(test_data), n_test));
             else:
                 print("Epoch {} finalizada".format(j))
 
     def update_mini_batch(self, mini_batch, eta):
         """Atualiza os pesos e bias da rede aplicando
-         a descida do gradiente usando backpropagation para um único mini lote.
-         O `mini_batch` é uma lista de tuplas `(x, y)`, e `eta` é a taxa de aprendizado."""
+             a descida do gradiente usando backpropagation para um único mini lote.
+         O `mini_batch` é uma lista de tuplas `(x, y)`, e `eta` é a taxa de aprendizado."""
 
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
@@ -88,9 +88,9 @@ class Network(object):
 
     def backprop(self, x, y):
         """Retorna uma tupla `(nabla_b, nabla_w)` representando o
-         gradiente para a função de custo C_x. `nabla_b` e
-         `nabla_w` são listas de camadas de matrizes numpy, semelhantes
-         a `self.biases` e `self.weights`."""
+         gradiente para a função de custo C_x. `nabla_b` e
+         `nabla_w` são listas de camadas de matrizes numpy, semelhantes
+         a `self.biases` e `self.weights`."""
 
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
@@ -114,9 +114,10 @@ class Network(object):
         delta = self.cost_derivative(activations[-1], y) * sigmoid_prime(zs[-1])
         nabla_b[-1] = delta
         nabla_w[-1] = np.dot(delta, activations[-2].transpose())
-        
+        """
         # Aqui, l = 1 significa a última camada de neurônios, l = 2 é a
-        # segunda e assim por diante. 
+        # segunda e assim por diante. 
+        """
         for l in range(2, self.num_layers):
             z = zs[-l]
             sp = sigmoid_prime(z)
@@ -128,8 +129,8 @@ class Network(object):
     def evaluate(self, test_data):
         """Retorna o número de entradas de teste para as quais a rede neural 
          produz o resultado correto. Note que a saída da rede neural
-         é considerada o índice de qualquer que seja
-         neurônio na camada final que tenha a maior ativação."""
+         é considerada o índice de qualquer que seja
+         neurônio na camada final que tenha a maior ativação."""
 
         test_results = [(np.argmax(self.feedforward(x)), y) for (x, y) in test_data]
         return sum(int(x == y) for (x, y) in test_results)
