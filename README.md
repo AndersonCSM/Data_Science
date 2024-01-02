@@ -1,5 +1,4 @@
-# DataScience
-Here is a list of the main projects developed in the field of data science, encompassing everything from data analysis to machine learning.
+This repository is focused on data science projects. Here you will find various projects that involve data extraction, transformation, and reading activities, as well as the use of some machine learning techniques according to the project.
 ---
-Aqui está disposto os principais projetos desenvolvidos na área de ciência de dados, envolvendo desde análise de dados até aprendizado de máquina.
+Este repositório é voltado para projetos de ciência de dados. Aqui você encontrará diversos projetos que envolvem atividades de extração, transformação e leitura de dados, além do uso de algumas técnicas de machine learning de acordo com o projeto.
 ---
