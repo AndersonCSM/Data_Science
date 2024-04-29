@@ -1,4 +1,38 @@
-This repository is focused on data science projects. Here you will find various projects that involve data extraction, transformation, and reading activities, as well as the use of some machine learning techniques according to the project.
+# English
+## About
+Repository for projects in the area of ​​data science. Here are projects that involve the main activities in the area, such as:
+- Exploration;
+- Extraction;
+- Transformation;
+- Data reading;
+- Machine learning techniques;
+- Data Driven.
+
+## Technologies
+- pure Python3;
+- Python3 libraries: pandas, numpy, urllib, matplotlib, sklearn, keras, tensorflow, among others;
+
+## Contact
+- Social networks:https://github.com/AndersonCSM
+- Contact email: andersoncarlos799@gmail.com
+
 ---
-Este repositório é voltado para projetos de ciência de dados. Aqui você encontrará diversos projetos que envolvem atividades de extração, transformação e leitura de dados, além do uso de algumas técnicas de machine learning de acordo com o projeto.
+# Português Brasil
+## Sobre
+Repositório para projetos na área de ciência de dados. Aqui estão projetos que envolvem as principais atividades da área como:
+- Exploração;
+- Extração;
+- Tranformação;
+- Leitura de dados;
+- Técnicas de aprendizado de máquina;
+- Data Driven.
+
+## Tecnologias
+- Python3 puro;
+- Bibliotecas Python3: pandas, numpy, urllib, matplotlib, sklearn, keras, tensorflow, entre outros;
+
+## Contato
+- Redes sociais:https://github.com/AndersonCSM
+- email de contato: andersoncarlos799@gmail.com
+
 ---
