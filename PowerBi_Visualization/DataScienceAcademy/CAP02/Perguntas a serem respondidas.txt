@@ -1,0 +1,11 @@
+Qual o valor total vendido? ok
+
+Quantas vendas foram realizadas por categoria de produto? ok
+
+Quantas vendas foram realizadas por país considerando a prioridade de entrega? ok
+
+Qual foi a média de desconto nas vendas por subcategoria de produto? ok
+
+Quais países tiveram maior média de valor de venda? Demonstre em um mapa. ok
+
+E nosso Dashboard deve dar ao usuário a possibilidade de filtrar os dados por ano, por segmento e por país ok
