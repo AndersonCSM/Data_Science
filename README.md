@@ -1,4 +1,3 @@
-# English
 ## About
 Repository for projects in the area of ​​data science. Here are projects that involve the main activities in the area, such as:
 - Exploration;
@@ -17,7 +16,6 @@ Repository for projects in the area of ​​data science. Here are projects tha
 - Contact email: andersoncarlos799@gmail.com
 
 ---
-# Português Brasil
 ## Sobre
 Repositório para projetos na área de ciência de dados. Aqui estão projetos que envolvem as principais atividades da área como:
 - Exploração;
