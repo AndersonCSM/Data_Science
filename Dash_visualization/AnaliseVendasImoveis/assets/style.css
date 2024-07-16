@@ -1,0 +1,13 @@
+.img-style {
+    width: 570px;  /* Define a largura desejada */
+    height: 200px;  /* Define a altura desejada */
+    object-fit: cover;  /* Faz o recorte para cobrir a área definida */
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+}
+
+.html-H4 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
