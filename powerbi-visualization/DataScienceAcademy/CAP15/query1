@@ -1,0 +1,14 @@
+SELECT Nome_produto, 
+        round(min(valor_venda), 2) as valor_minimo, 
+        round(max(valor_venda), 2) as valor_maximo, 
+        round(AVG(valor_venda), 2) as valor_medio,
+        round(SUM(valor_venda), 2) as valor_total,
+        (COUNT(valor_venda)) as contagem,
+        Ano
+        
+FROM TB_DSA_VENDAS, TB_DSA_PRODUTOS, tb_dsa_pedidos
+where tb_dsa_vendas.produto = tb_dsa_produtos.ID_Produto
+and tb_dsa_vendas.Pedido = tb_dsa_pedidos.ID_Pedido
+
+group by Produto, ano
+order by contagem desc;
