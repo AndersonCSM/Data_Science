@@ -1,0 +1,1 @@
+ALTER TABLE usuarios ALTER COLUMN endereco TYPE VARCHAR(100);
